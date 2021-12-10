@@ -1,6 +1,5 @@
 # Домашнее задание к занятию «2.3. Ветвления в Git»
 
----
 
 ##Подготовка к выполнению задания
 
@@ -28,11 +27,11 @@ cp .\merge.sh .\rebase.sh
 Сделаем предварительный коммит в ветку master:
 `git commit -m 'prepare for merge and rebase'`
 
----
+
 
 ##Подготовка файла *merge.sh*:
 
-----
+---
 
 Создадим ветку git-merge:
 ```
@@ -76,7 +75,6 @@ $ git push
 ##Изменение ветки *master*
 
 ---
-
 Вернемся в ветку *master*:
 ```
 $ git checkout master
@@ -101,11 +99,9 @@ $ git add .
 $ git commit -m 'rebase.sh to main'
 $ git push -u origin main
 ```
-
 ##Подготовка файла *rebase.sh*
 
 ---
-
 Найдем хэш коммита 'prepare for merge and rebase' и сделаем checkout на него:
 ```
 $git checkout d410805
@@ -136,11 +132,9 @@ HEAD is now at d410805 prepare for merge and rebase
 $ git commit -a -m 'git-rebase 2'
 $ git push
 ```
-
 ##Merge
 
 ---
-
 Сливаем ветку *git-merge* с веткой *master*
 ```
 $git merge git-merge
@@ -155,7 +149,6 @@ Merge made by the 'recursive' strategy.
 ##Rebase
 
 ---
-
 Выполним rebase ветки *git-rebase* на *master*:
 ```
 $git rebase master
