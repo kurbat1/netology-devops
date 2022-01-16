@@ -71,7 +71,7 @@ vagrant@vagrant:~$ > /proc/1356/fd/1
 ```
 файл обнулен:
 
-![ping](img\ping.png)
+![ping](img/ping.png)
 ---
 4. *Занимают ли зомби-процессы какие-то ресурсы в ОС (CPU, RAM, IO)?*
 
@@ -85,7 +85,7 @@ root@vagrant:~# dpkg -L bpfcc-tools | grep sbin/opensnoop
 ```
 *На какие файлы вы увидели вызовы группы open за первую секунду работы утилиты? Воспользуйтесь пакетом `bpfcc-tools` для Ubuntu 20.04. Дополнительные [сведения по установке](https://github.com/iovisor/bcc/blob/master/INSTALL.md).*
 
-![opensnoop](img\opensnoop.png)
+![opensnoop](img/opensnoop.png)
 
 ---
 6. *Какой системный вызов использует `uname -a`? Приведите цитату из man по этому системному вызову, где описывается альтернативное местоположение в `/proc`, где можно узнать версию ядра и релиз ОС.*
