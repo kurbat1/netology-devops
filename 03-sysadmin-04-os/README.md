@@ -32,7 +32,7 @@ WantedBy=multi-user.target
 
 [Service]
 
-ExecStart=/opt/node_exporter/node_exporter
+ExecStart=/opt/node_exporter/node_exporter $OPTIONS
 ```
 ```bash
 root@vagrant:~# systemctl enable node_exporter
